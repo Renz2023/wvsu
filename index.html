@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Visayas State University - Lambunao Campus</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        h2, h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src=" file:///storage/emulated/0/Download/images.jpeg" alt="WVSU Lambunao Campus Logo" style="max-width: 150px;">
+        <h1>West Visayas State University - Lambunao Campus</h1>
+    </header>
+
+    <div class="container">
+        <button onclick="toggleSection('mission')">Mission</button>
+        <div id="mission" class="section hidden">
+            <h2>Mission</h2>
+            <em>Mission: WVSU commits to develop life-long learners empowered to generate knowledge and technology, and transform communities as agents of change.</em>
+        </div>
+
+        <button onclick="toggleSection('vision')">Vision</button>
+        <div id="vision" class="section hidden">
+            <h2>Vision</h2>
+            <em>Vision: A research university advancing quality education towards societal transformation and global recognition.</em>
+        </div>
+
+        <button onclick="toggleSection('coreValues')">Core Values</button>
+        <div id="coreValues" class="section hidden">
+            <h2>WVSU Lambunao Campus Core Values</h2>
+            <ul>
+                <li>Excellence</li>
+                <li>Creativity and Innovation</li>
+                <li>Service</li>
+            </ul>
+        </div>
+
+        <button onclick="toggleSection('courses')">Courses Offered</button>
+        <div id="courses" class="section hidden">
+            <h3>Courses Offered:</h3>
+            <ul>
+                <li>Bachelor of Science in Information Technology</li>
+                <li>Bachelor of Science in Elementary Education</li>
+                <li>Bachelor of Science in Secondary Education</li>
+                <li>Bachelor of Science in Industrial Technology</li>
+                <li>Bachelor of Science in Criminal Justice Education</li>
+                <li>Bachelor of Science in Hospitality Management</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        Prepared by: Renz Jerald P. Clanes<br>
+        BS INFOTECH 2-C
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
